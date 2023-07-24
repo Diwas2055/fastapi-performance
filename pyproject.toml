@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-performance"
+version = "0.1.0"
+description = "Guide to improve performance of FastAPI"
+authors = ["Diwash Bhandari <diwash.bhandari@codavatar.tech>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.100.0"}
+pyclean = "^2.7.3"
+black = "^23.7.0"
+uvicorn = "^0.23.1"
+httptools = "^0.6.0"
+pre-commit = "^3.3.3"
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
